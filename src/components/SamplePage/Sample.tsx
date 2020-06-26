@@ -6,7 +6,7 @@ import { useFetch } from "@src/hooks";
 export const Sample: FC = () => {
   const { user, login } = useContext(SampleContext);
   const [displayElement, setDisplayElement] = useState(false);
-  const [url, setUrl] = useState(null);
+  const [url, setUrl] = useState("");
   const data = useFetch("https://jsonplaceholder.typicode.com/posts/1", {});
   const data2 = useFetch(url, {});
 

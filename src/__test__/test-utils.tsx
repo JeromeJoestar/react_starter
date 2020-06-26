@@ -7,7 +7,7 @@ const AllProviders = ({ children }) => (
   <HelmetProvider>{children}</HelmetProvider>
 );
 
-const customRender: typeof render = (ui, options?) => render(ui, { wrapper: AllProviders, ...options });
+const customRender: typeof render = (ui: any, options?: any) => render(ui, { wrapper: AllProviders, ...options });
 
 // re-export everything
 export * from "@testing-library/react";

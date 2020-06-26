@@ -3,7 +3,7 @@ import React, { FC } from "react";
 
 interface SampleContext {
   loading: boolean;
-  serverError: number;
+  serverError: number | null;
   // Try not to use any type when possible, here only for sample
   user: any;
   login(): void;

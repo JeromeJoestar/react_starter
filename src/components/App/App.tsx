@@ -6,13 +6,21 @@ import { Routes } from "@src/components/Routes";
 
 import "@src/styles/index.scss";
 
-export class App extends React.Component<{ serverError: number }, { error: boolean }> {
-  constructor(props) {
+interface AppProps {
+  serverError: number;
+}
+
+interface AppState {
+  error: boolean;
+}
+
+export class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
     super(props);
     this.state = { error: false };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: any, errorInfo: any) {
     this.setState({ error: true });
     console.log(error);
     console.log(errorInfo);
