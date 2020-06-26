@@ -1,0 +1,21 @@
+@import "./header";
+@import "./footer";
+
+#react_starter {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+
+  .full-height-container {
+    flex: 1 1 auto;
+  }
+}
+
+@keyframes page-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

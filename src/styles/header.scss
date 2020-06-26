@@ -1,0 +1,23 @@
+.header {
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    li {
+      list-style: none;
+    }
+
+    &__right {
+      float: right;
+    }
+  }
+  &__logo {
+    display: block;
+    margin: 5px 10px;
+    margin-left: 0;
+
+    img {
+      display: block;
+      height: 14px;
+    }
+  }
+}
